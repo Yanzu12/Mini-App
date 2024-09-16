@@ -1,0 +1,26 @@
+<!--components/invest/invest.wxml-->
+<view hidden="{{hide}}" class="dom" bind:tap="hidepopup" data-canclose="{{true}}" style="background-color: rgba(0,0,0,0.3);">
+  <view class="menu">
+    <view class="header">
+      <view bind:tap="hidepopup" data-canclose="{{true}}" class="close-btn">x</view>
+    </view>
+    <view style="text-align: center;font-size: 50rpx;">开始时间</view>
+    <scroll-view class="container" scroll-y>
+      <view>9：00</view>
+      <view>12：00</view>
+      <view>15：00</view>
+      <view>18：00</view>
+    </scroll-view>
+    <view style="margin-top: 10%;text-align: center;font-size: 50rpx;">预约时长(单位：小时)</view>
+    <scroll-view class="content" scroll-y style="width: 820rpx; height: 239rpx; display: block; box-sizing: border-box">
+      <view style="margin-top: -3%;" class="mod">
+        <view class="selector" style="width: 468rpx; height: 158rpx; display: flex; box-sizing: border-box">
+          <view bind:tap="min" style="width: 120rpx; height: 158rpx; display: block; box-sizing: border-box">-</view>
+          <input class="num" value="{{purchase}}" style="width: 185rpx; height: 62rpx; display: block; box-sizing: border-box;font-weight: 600;"></input>
+          <view bind:tap="plus" style="width: 120rpx; height: 158rpx; display: block; box-sizing: border-box">+</view>
+        </view>
+      </view>
+    </scroll-view>
+    <button bind:tap="purchaseconfirm" type="primary" style="margin-top: -5%;">确认</button>
+  </view>
+</view>

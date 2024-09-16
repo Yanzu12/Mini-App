@@ -1,0 +1,18 @@
+ <swiper style="height: 40%;" indicator-dots="true" autoplay="true" interval="5000" circular="true">
+    <swiper-item>
+      <image style="width:100%;" src="/img/62c830cd8f5ca.jpg" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image style="width:100%;" src="/img/90.png" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image style="width:100%;" src="/img/db0a311af9654173a3817f453b2d1a99.jpeg" mode="scaleToFill"></image>
+    </swiper-item>
+  </swiper>
+  <view  style="background-color: gainsboro;height: 100%;display: flex;">
+    <view bind:tap="LoadSeat" style="height: 200rpx; margin-top: 20%; margin-left: 5%;"><button class="but" style="height: 200rpx; width: 300rpx"><view><image style="width:100rpx;height: 100rpx;"src="/img/icon_晚自习座位管理.png"></image></view>预约座位</button></view>
+    <view bind:tap="LeaveSeat" style="height: 200rpx;margin-top: 20%;margin-left: 10%;"><button class="but" style="height: 200rpx;width: 300rpx"><navigator><view><image style="width:100rpx;height: 100rpx;"src="/img/离开.png"></image></view>离开座位</navigator></button></view>
+    <view bind:tap="wait" style="margin-left: -90%;"><button class="but" style="top:50%;height: 200rpx;width: 300rpx"><navigator ><view><image style="width:100rpx;height: 100rpx;"src="/img/活动.png"></image></view>优惠活动</navigator></button></view>
+    <view bind:tap="onshowpopup" style="margin-left:9%;"><button class="but" style="top:50%;height: 200rpx;width: 300rpx"><navigator><view><image style="width:100rpx;height: 100rpx;"src="/img/余额.png"></image></view>余额充值</navigator></button></view>
+ </view>
+ <invest item="{{item}}" hide="{{hidepopup}}"></invest>

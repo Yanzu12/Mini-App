@@ -1,0 +1,27 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view class="shop-item" wx:for="{{shopList}}" wx:key="id">
+  <view class="img">
+    <image src="{{item.url}}"></image>
+  </view>
+  <view class="info">
+    <text class="shop-title">{{item.name}}</text>
+    <text>价格：{{item.price}}</text>
+    <text>商品信息：{{item.desc}}</text>
+    <button type="primary" bindtap="showInputDialog" data-item="{{item}}">点击购买</button>
+  </view>
+</view>
+
+<view class="modal" wx:if="{{showModal}}">  
+    <view class="modal-content">  
+      <view class="modal-header">  
+        <text class="title">{{dialogTitle}}</text>  
+      </view>  
+      <view class="modal-body">  
+        <input type="text" placeholder="{{dialogPlaceholder}}" bindinput="handleInput" value="{{dialogValue}}" />  
+      </view>  
+      <view class="modal-footer">  
+        <button bindtap="confirmInput">确定</button>  
+        <button bindtap="hideModal">取消</button>  
+      </view>  
+    </view>  
+  </view>

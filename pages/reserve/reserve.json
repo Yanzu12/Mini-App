@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "invest": "/components/reserve-comp/reserve-comp"
+  }
+}

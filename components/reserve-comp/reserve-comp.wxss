@@ -1,0 +1,94 @@
+.dom{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top:0;
+}
+.menu{
+  height: 800rpx;
+  width: 100%;
+  background-color: white;
+  border-radius: 10rpx 10rpx 0 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  height: 120rpx;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30rpx;
+}
+.close-btn{
+  background-color: #cdcdcd;
+  color:#444444;
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  line-height: 30rpx;
+  text-align: center;
+  margin: 35rpx;
+}
+.content{
+  height: 20rpx;
+  padding: 50rpx 35rpx;
+}
+.mod{
+  display: flex;
+  text-align: center;
+  width: 90%;
+}
+.selector{
+  display: flex;
+  margin-left: 15%;
+}
+.selector view{
+  width: 200rpx;
+  font-size: 100rpx;
+  margin:0 10rpx
+}
+.num{
+  margin-top: 10%;
+  width: 300rpx;
+  background-color: #cdcdcd;
+  text-align: center;
+}
+
+.container{
+  width: 30%;
+  height: 30px;
+  text-align: center;
+  margin-top: 6%;
+  margin-left: 35%;
+}
+
+.container view{
+height: 30px;
+text-align: center;
+line-height: 30px;
+}
+
+.container view:nth-child(1){
+  text-align: center;
+  font-weight: 600;
+  background-color: #cdcdcd;
+}
+
+.container view:nth-child(2){
+  font-weight: 600;
+  background-color: #cdcdcd;
+}
+
+.container view:nth-child(3){
+  font-weight: 600;
+  background-color:#cdcdcd;
+}
+
+.container view:nth-child(4){
+  font-weight: 600;
+  background-color:#cdcdcd;
+}
+
+

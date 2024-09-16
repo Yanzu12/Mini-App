@@ -1,0 +1,64 @@
+<scroll-view class='scbg' scroll-y='true'>
+  <view class="parent_catainer">
+    <view style="background-color: #bbb;" class="container_head">
+      
+      <view class="head_pers_info" bindtap="head_pers_info">
+        <view class="head_pic">
+          <image class="head_pic_content" mode="aspectFit" src="/img/头像.jpg"></image>
+        </view>
+        <view class="inf_content">
+          <text class="user_info">{{Username}}</text>
+          <text class="family_info_ct_phone">联系电话：{{number}}</text>
+        </view>
+      </view>
+    </view>
+ 
+    <view class="userItemListView">
+      <view class="my_priview_md" bindtap="myappoint">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>我的预约</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="openmyorder">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>我的订单</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="balance">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>我的余额</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="myfriend">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>我的亲友</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="mycollection">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>我的收藏</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+ 
+    <view class="userItemListView">
+      <view bind:tap="edit" class="my_priview_md">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>资料修改</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="aboutus" hidden="true">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>关于我们</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="logout">
+        <image class="my_priview" src="/img/mine_fiend.png"></image>
+        <text>退出登录</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+ 
+    <view class="last_view"></view>
+  </view>
+</scroll-view>

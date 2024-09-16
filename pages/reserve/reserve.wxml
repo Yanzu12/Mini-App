@@ -1,0 +1,117 @@
+<swiper style="height: 150px;" indicator-dots autoplay="true" interval="2000" circular>
+  <swiper-item>
+    <view class="banner">
+      <image src="/img/62c830cd8f5ca.jpg"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="banner">
+      <image src="/img/db0a311af9654173a3817f453b2d1a99.jpeg"></image>
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="nav">
+  <view class="nav_main">
+    <view class="nav_main_title"></view>
+    <picker bindchange="bandpickerchangeplace" value="{{index}}" range="{{placearr}}">
+      <view class="picker">
+        位置：{{placearr[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="nav_main">
+    <view class="nav_main_title"></view>
+    <picker bindchange="bandpickerchangezt" value="{{index1}}" range="{{ztarr}}">
+      <view class="picker">
+        状态：{{ztarr[index1]}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<invest item="{{item}}" hide="{{hidepopup}}"></invest>
+
+<!-- 开始 -->
+<view wx:if="{{index==0}}">
+  <view class="wz_lc">鼎新二楼</view>
+  <view wx:for="{{array2}}" wx:for-index="index" wx:for-item="item">
+    <view wx:if="{{item==0}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="2" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">可预约</view>
+      </view>
+    </view>
+    <view wx:if="{{item==1}}">
+      <view class="zw_bar" wx:if="{{index1!=1}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">已预约</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view wx:if="{{index==1}}">
+  <view class="wz_lc">鼎新三楼</view>
+  <view wx:for="{{array3}}" wx:for-index="index" wx:for-item="item">
+    <view wx:if="{{item==0}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="3" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">可预约</view>
+      </view>
+    </view>
+    <view wx:if="{{item==1}}">
+      <view class="zw_bar" wx:if="{{index1!=1}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">已预约</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view wx:if="{{index==2}}">
+  <view class="wz_lc">鼎新四楼</view>
+  <view wx:for="{{array4}}" wx:for-index="index" wx:for-item="item">
+    <view wx:if="{{item==0}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="4" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">可预约</view>
+      </view>
+    </view>
+    <view wx:if="{{item==1}}">
+      <view class="zw_bar" wx:if="{{index1!=1}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">已预约</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view wx:if="{{index==3}}">
+  <view class="wz_lc">鼎新五楼</view>
+  <view wx:for="{{array5}}" wx:for-index="index" wx:for-item="item">
+    <view wx:if="{{item==0}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="5" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">可预约</view>
+      </view>
+    </view>
+    <view wx:if="{{item==1}}">
+      <view class="zw_bar" wx:if="{{index1!=1}}">
+        <view class="zw_bar_bh">座位号</view>
+        <view class="zw_bar_bh_sz">{{index+1}}</view>
+        <view class="zw_zt">已预约</view>
+      </view>
+    </view>
+  </view>
+</view>

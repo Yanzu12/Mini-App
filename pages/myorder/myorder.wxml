@@ -1,0 +1,12 @@
+<!--pages/myorder/myorder.wxml-->
+<view class="shop-item" wx:for="{{wholeItem}}" wx:key="id">
+  <view class="img">
+    <image src="{{item['selectedItem'].url}}"></image>
+  </view>
+  <view class="info">
+    <text class="shop-title">{{item['selectedItem'].name}}</text>
+    <text>价格：{{item['selectedItem'].price}}</text>
+    <text>商品信息：{{item['selectedItem'].desc}}</text>
+		<text>预约座位：{{item['seat']}}</text>
+  </view>
+</view>

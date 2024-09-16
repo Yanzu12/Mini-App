@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="v1">
+    <view class="v2">
+      <view  class="dltext" style="width: 232rpx; height: 92rpx; display: block; box-sizing: border-box; left: 0rpx; top: -2rpx">登录</view>
+      
+      <view class="phoneCs">
+        <image src="/img/用户.png" class="ph"></image>
+        <input bindinput="input1" placeholder="请输入账号"  type="text"/>
+      </view>
+
+      <view class="passwordCs">
+        <image src="/img/密码.png" class="ps"></image>
+        <input bindinput="input2" placeholder="请输入密码" type="password"/>
+      </view>
+
+      <view class="login">
+        <button class="btn-dl" type="primary" bindtap="login">登录</button>
+      </view>
+      
+    </view>
+    <view style="margin-left: 42%;">
+        没有账号？<navigator url="/pages/register/register" style="color: blue;">点击注册</navigator>
+      </view>
+    
+</view>
+      

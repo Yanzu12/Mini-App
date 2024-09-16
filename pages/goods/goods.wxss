@@ -1,0 +1,54 @@
+.shop-item {
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.img image {
+  width: 250rpx;
+  height: 250rpx;
+  display:block;
+  margin-right: 15rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+
+.shop-title {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.modal {  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  background: rgba(0, 0, 0, 0.5);  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  z-index: 9999;  
+}  
+  
+.modal-content {  
+  /* 定义你的对话框样式 */  
+  background: #fff;  
+  border-radius: 10px;  
+  padding: 20px;  
+}  
+  
+.modal-header {
+  text-align: center;
+}

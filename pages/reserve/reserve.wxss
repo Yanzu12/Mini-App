@@ -1,0 +1,77 @@
+/* pages/list/list.wxss */
+.banner{
+	width: 100%;
+	height: 300rpx;
+}
+
+.banner image{
+	width: 100%;
+	height: 100%;
+}
+
+.nav{
+	width: 100%;
+	height: 80rpx;
+	background-color: rgb(166, 180, 185);
+}
+
+.nav_main_title{
+	float: left;
+}
+
+.picker{
+	float: left;	
+}
+
+.nav_main{
+	line-height:80rpx;
+	font-weight: 500;
+	font-size: 32rpx;
+	width: 300rpx;
+	height: 100%;
+	background-color: rgb(166, 180, 185);
+	margin: 0 20rpx;
+	float: left;
+}
+
+.zw{
+	width: 95%;
+	min-height: 300rpx;
+	margin: 0 auto;
+}
+
+.zw_bar{
+	width:21%;
+	height:200rpx;
+	background-color: rgb(199, 197, 194);
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+	border-radius: 10rpx;
+	margin: 30rpx 2%;
+	float: left;
+}
+
+.zw_bar_bh{
+	text-align: center;
+	padding-top: 30rpx;
+	font-weight: 600;
+}
+
+.zw_bar_bh_sz{
+	font-size: 24rpx;
+	text-align: center;
+	line-height: 50rpx;
+}
+
+.zw_zt{
+	text-align: center;
+	font-size: 25rpx;
+}
+
+.wz_lc{
+  line-height: 60rpx;
+  margin: 20rpx 5rpx;
+  padding-left: 10rpx;
+  border-left: 10rpx solid rebeccapurple;
+  font-weight: 600;
+}
+
