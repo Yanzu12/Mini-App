@@ -1,4 +1,4 @@
-# Mini-
+# Mini-App
 
 Enterprise Practical Traning
 
